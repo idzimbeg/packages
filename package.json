@@ -1,0 +1,31 @@
+{
+  "name": "fsd-packages",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Reusable FSD packages for authentication, UI components, data tables, and forms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/fsd-packages.git"
+  },
+  "keywords": [
+    "fsd",
+    "feature-sliced-design",
+    "react",
+    "auth",
+    "ui-components",
+    "data-table",
+    "form-builder"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm --filter './packages/*' run build",
+    "dev": "pnpm --filter './packages/*' run dev",
+    "clean": "pnpm --filter './packages/*' run clean",
+    "test": "pnpm --filter './packages/*' run test",
+    "lint": "pnpm --filter './packages/*' run lint",
+    "publish:all": "pnpm --filter './packages/*' publish"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  }
+}
