@@ -2,6 +2,23 @@
 
 Reusable packages following Feature-Sliced Design architecture for React applications.
 
+## 🚀 Quick Start: Automated Monorepo Setup
+
+The fastest way to get started is using our automated setup script that creates a complete monorepo with all packages configured:
+
+```bash
+# Copy create-monorepo.sh from this repo, then run:
+./create-monorepo.sh my-project my-app
+cd my-project
+pnpm dev
+```
+
+See [CREATE_MONOREPO_GUIDE.md](./CREATE_MONOREPO_GUIDE.md) for detailed instructions.
+
+Or follow [PACKAGE_INSTALLATION_GUIDE.md](./PACKAGE_INSTALLATION_GUIDE.md) for manual setup.
+
+---
+
 ## Packages
 
 - **[@packages/auth-module](./packages/auth-module)** - Complete authentication module with social login support
@@ -36,6 +53,7 @@ pnpm install
 ```
 
 Then in your app's package.json:
+
 ```json
 {
   "dependencies": {
@@ -61,6 +79,7 @@ pnpm test
 ## Usage
 
 See individual package READMEs for detailed usage instructions:
+
 - [Auth Module Usage](./packages/auth-module/README.md)
 - [Core UI Usage](./packages/core-ui/README.md)
 - [Data Table Usage](./packages/data-table-module/README.md)
